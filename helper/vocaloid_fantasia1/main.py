@@ -56,32 +56,47 @@ def sanitize_string(s: str) -> str:
 def main():
     """Create circles.json"""
     print(f"Retrieving circles information for {NAME} ...")
-    raw_url = ""
+    raw_url = "https://web.archive.org/web/20100916113129fw_/http://vocaloid-fantasia.com/circle1.htm"
     
     # Parse the HTML content to extract circle information
     soup = retrieve_soup_fetch_if_needed(raw_url)
     circles = []
 
     # table: with border=1
-    table = soup.select_one('table[border="1"]')
-    if not table:
-        raise Exception("Failed to find the circles table in the HTML content.")
+    tables = soup.select('table[border="1"]')
+    
+    for table in tables:
+        table_rows = table.select("tr")
+        if not table_rows:
+            raise Exception("No rows found in the circles table.")
 
-    table_rows = table.select("tr")
-    if not table_rows:
-        raise Exception("No rows found in the circles table.")
+        for row in table_rows[1:]:  # Skip header row
+                cols = row.select("td")
+                if len(cols) < 4:
+                    print("Skipping row with insufficient columns:", row)
+                    continue
+                
+                position = sanitize_string(cols[0].get_text())
+                circle_name = sanitize_string(cols[1].get_text())
+                pen_name = sanitize_string(cols[2].get_text())
+                circle_urls = []
+                web_tag = cols[3].select_one("a")
+                if web_tag and web_tag.has_attr("href"):
+                    new_url = web_tag["href"].replace("https://web.archive.org/web/20100916113129/", "")
+                    
+                    re_local_url = re.compile(r"^\./")
+                    new_url = re_local_url.sub("https://web.archive.org/web/2/http://vocaloid-fantasia.com/", new_url)
+                    circle_urls.append(new_url)
 
-    # for row in table_rows[1:]:  # Skip header row
+                circle = Circle(
+                    aliases=[circle_name],
+                    pen_names=[pen_name] if pen_name else None,
+                    links=circle_urls if circle_urls else None,
+                    position=position,
+                    # comments=", ".join(comment_parts) if comment_parts else None,
+                )
 
-            # circle = Circle(
-            #     aliases=[circle_name],
-            #     pen_names=[pen_name] if pen_name else None,
-            #     links=[circle_url] if circle_url else None,
-            #     position=position,
-            #     comments=", ".join(comment_parts) if comment_parts else None,
-            # )
-
-            # circles.append(circle)
+                circles.append(circle)
 
     # Save the extracted circle information to a JSON file
     with open(PATH_CIRCLES_JSON, "w", encoding="utf-8") as f:

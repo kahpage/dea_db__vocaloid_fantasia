@@ -75,6 +75,15 @@ if __name__ == "__main__":
         print(f"Processing {event_name} ...")
 
         media_ = [
+            Medium(
+                "01_x2_4b5407c.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20110613091525/http://vocaloid-fantasia.com/gazou/x2_4b5407c.jpg",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
             # Medium("", [Source("", (RT.Reliable, OT.Official))]),
         ]
         locations = [
@@ -90,7 +99,7 @@ if __name__ == "__main__":
             ),
         ]
         event = Event(
-            aliases=["VOCALOID Fantasia", "VOCALOID Fantasia 1", "vocafan 1"],
+            aliases=["VOCALOID Fantasia", "VOCALOID Fantasia1", "vocafan1"],
             dates="2010.09.05",
             circles=[],
             media=media_,
@@ -153,7 +162,7 @@ if __name__ == "__main__":
             ),
         ]
         event = Event(
-            aliases=[f"VOCALOID Fantasia {i}", f"vocafan {i}"],
+            aliases=[f"VOCALOID Fantasia{i}", f"ボカファン{i}", f"vocafan{i}"],
             dates="2011.09.18",
             circles=[],
             media=media_,
@@ -234,7 +243,7 @@ if __name__ == "__main__":
             ),
         ]
         event = Event(
-            aliases=[f"VOCALOID Fantasia {i}", f"vocafan {i}"],
+            aliases=[f"VOCALOID Fantasia{i}", f"ボカファン{i}", f"vocafan{i}"],
             dates="2012.09.23",
             circles=[],
             media=media_,
@@ -258,47 +267,266 @@ if __name__ == "__main__":
         event.circles = retrieve_circles(event_name)
         events.append(event)
 
-    # i =   # ==== vocaloid_fantasia  ====
-    # if i in active_events:
-    #     event_name = f"vocaloid_fantasia{i}"
-    #     print(f"Processing {event_name} ...")
+    i = 4  # ==== vocaloid_fantasia4  ====
+    if i in active_events:
+        event_name = f"vocaloid_fantasia{i}"
+        print(f"Processing {event_name} ...")
 
-    #     media_ = [
-    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
-    #     ]
-    #     locations = [
-    #         # Location(
-    #         #     iframe_url="",
-    #         #     description="",
-    #         #     sources=[
-    #         #         Source(
-    #         #             "",
-    #         #             (ReliabilityTypes.Reliable, OriginTypes.Official),
-    #         #         )
-    #         #     ],
-    #         # ),
-    #     ]
-    #     event = Event(
-    #         aliases=[f"VOCALOID Fantasia {i}", f"vocafan {i}"],
-    #         dates="",
-    #         circles=[],
-    #         media=media_,
-    #         sources=[
-    #             # Source("Date: ", (RT.Reliable, OT.Official)),
-    #             # Source("Participating circles: ", (RT.Reliable, OT.Official)),
-    #         ],
-    #         locations=locations,
-    #         description=None,
-    #         # comments=None,
-    #         # last_edited="2026.10.21",
-    #     )
+        media_ = [
+            Medium(
+                "04_vocafan04.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20160811220905/http://vocaloid-fantasia.com/ippan04.htm",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "04_haichi.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20131207042859/http://vocaloid-fantasia.com/cir-iciran04.htm",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41280.738025225925!2d139.63619093655805!3d35.438584145120856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cfc879b30db%3A0x8d76dbf7eaf7b911!2sYokohama%20Sanbo%20Hall%20Marineria!5e0!3m2!1sen!2sfr!4v1782062083547!5m2!1sen!2sfr",
+                description="横浜産貿ホール　マリネリア全面",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20260207074257/https://vocaloid-fantasia.com/about04.htm",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[f"VOCALOID Fantasia{i}", f"ボカファン{i}", f"vocafan{i}"],
+            dates="2013.09.15",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20260207074257/https://vocaloid-fantasia.com/about04.htm",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    "Participating circles: https://web.archive.org/web/20251228214217/https://vocaloid-fantasia.com/cir-iciran04.htm",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            description="Simultaneous with UTAU Fantasia2 and この声届け、月までも.",
+            comments="Circle list is for both VOCALOID Fantasia4 and UTAU Fantasia2 since no source was found to separate the lists.",
+            last_edited="2026.10.21",
+        )
 
-    #     # Retrieve circles
-    #     # event.circles = retrieve_circles(event_name)
-    #     events.append(event)
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
+
+    i = 5  # ==== vocaloid_fantasia5  ====
+    if i in active_events:
+        event_name = f"vocaloid_fantasia{i}"
+        print(f"Processing {event_name} ...")
+
+        media_ = [
+            Medium(
+                "05_vocafan5.gif",
+                [
+                    Source(
+                        "https://web.archive.org/web/20140817080745/http://vocaloid-fantasia.com/index.htm",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "05_gamen-5F.gif",
+                [
+                    Source(
+                        "https://web.archive.org/web/20160307085202/http://vocaloid-fantasia.com/cir-iciran05.htm",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5043415693403!2d139.78040617588312!3d35.689204772584645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889520a5d69ef%3A0xe6ef2b5af497cb6!2sMensh%C5%8D%20Kaikan!5e0!3m2!1sen!2sfr!4v1782073194672!5m2!1sen!2sfr",
+                description="東京・綿商会館",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20160326090831/http://vocaloid-fantasia.com/about05.htm",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[f"VOCALOID Fantasia{i}", f"ボカファン{i}", f"vocafan{i}"],
+            dates="2014.09.23",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20160326090831/http://vocaloid-fantasia.com/about05.htm",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    "Participating circles: https://web.archive.org/web/20150113223953/http://vocaloid-fantasia.com/cir-iciran05.htm",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            description=None,
+            # comments=None,
+            last_edited="2026.10.21",
+        )
+
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
+
+    i = 6  # ==== vocaloid_fantasia6  ====
+    if i in active_events:
+        event_name = f"vocaloid_fantasia{i}"
+        print(f"Processing {event_name} ...")
+
+        media_ = [
+            Medium(
+                "06_vocafan6.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20251015073257/https://vocaloid-fantasia.com/",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "06_haichi6.gif",
+                [
+                    Source(
+                        "https://web.archive.org/web/20250416144828/https://vocaloid-fantasia.com/cir-iciran06.htm",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41280.738025225925!2d139.63619093655805!3d35.438584145120856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cfc879b30db%3A0x8d76dbf7eaf7b911!2sYokohama%20Sanbo%20Hall%20Marineria!5e0!3m2!1sen!2sfr!4v1782062083547!5m2!1sen!2sfr",
+                description="横浜産貿ホール　マリネリア全面",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20250417022424/https://vocaloid-fantasia.com/about06.htm",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[
+                "VOCALOID Fantasia Final",
+                f"VOCALOID Fantasia{i}",
+                f"ボカファン{i}",
+                f"vocafan{i}",
+            ],
+            dates="2015.02.01",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20250417022424/https://vocaloid-fantasia.com/about06.htm",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    "Participating circles: https://web.archive.org/web/20250416144828/https://vocaloid-fantasia.com/cir-iciran06.htm",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            description=None,
+            # comments=None,
+            last_edited="2026.10.21",
+        )
+
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
 
     # ==== event group ====
     media = [
+        Medium(
+            "eg_banner.gif",
+            [
+                Source(
+                    "https://web.archive.org/web/20101230133938/http://vocaloid-fantasia.com/banner.gif",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "eg_top_banner.gif",
+            [
+                Source(
+                    "https://web.archive.org/web/20160326090831/http://vocaloid-fantasia.com/about05.htm",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "eg_DSC0881.jpg",
+            [
+                Source(
+                    "https://web.archive.org/web/20110613092057/http://vocaloid-fantasia.com/repo/_DSC0881.jpg",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "https://web.archive.org/web/20150113104813oe_/http://vocaloid-fantasia.com/janken.mp4",
+            [
+                Source(
+                    "https://web.archive.org/web/20150113104813/http://vocaloid-fantasia.com/janken.htm",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "https://web.archive.org/web/20110613091931/http://vocaloid-fantasia.com/retch.pdf",
+            [
+                Source(
+                    "https://web.archive.org/web/20110613091931/http://vocaloid-fantasia.com/retch.pdf",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "https://web.archive.org/web/20160430005630/http://vocaloid-fantasia.com/koetuki/hannyu.pdf",
+            [
+                Source(
+                    "https://web.archive.org/web/20160430005630/http://vocaloid-fantasia.com/koetuki/hannyu.pdf",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "https://web.archive.org/web/20160327010420/http://vocaloid-fantasia.com/hannyu06.pdf",
+            [
+                Source(
+                    "https://web.archive.org/web/20160327010420/http://vocaloid-fantasia.com/hannyu06.pdf",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
         # Medium("",
         #        [Source("", (RT.Reliable, OT.Official))]),
         # Medium("",
@@ -307,11 +535,15 @@ if __name__ == "__main__":
     links = ["http://vocaloid-fantasia.com/index.htm", "https://x.com/vocafan0905"]
 
     event_group = EventGroup(
-        aliases=["VOCALOID Fantasia", "vocafan"],
+        aliases=["VOCALOID Fantasia", "ボカファン", "vocafan"],
         events=events,
         media=media,
         links=links,
         sources=[
+            Source(
+                'Alias "ボカファン": https://x.com/vocafan0905/status/361447306106634240',
+                (ReliabilityTypes.Reliable, OriginTypes.Official),
+            ),
             Source(
                 'Alias "vocafan": https://web.archive.org/web/20100925184844/http://vocaloid-fantasia.com/index.htm',
                 (ReliabilityTypes.Reliable, OriginTypes.Official),

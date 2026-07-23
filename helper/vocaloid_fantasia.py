@@ -88,7 +88,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41280.738025225925!2d139.63619093655805!3d35.438584145120856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cfc879b30db%3A0x8d76dbf7eaf7b911!2sYokohama%20Sanbo%20Hall%20Marineria!5e0!3m2!1sen!2sfr!4v1782062083547!5m2!1sen!2sfr",
+                coordinates=(35.4471499, 139.6432575),
+                address="2 Yamashitacho, Naka Ward, Yokohama, Kanagawa 231-0023, Japan",
                 description="横浜産貿ホール　マリネリア全面",
                 sources=[
                     Source(
@@ -96,6 +97,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn3j0r7jhTBvDEmCgBnlhwXrSYHHrkl3fqXnrZDIY8cCVr146rAAv7f4-86On8aWyTCrywzJEL_vYeMyux_gNF4fW3166cMPmdL8k1ZZiWV5_1TOMRlOt6LiAbYpurFO0j4Gw06wg=w408-h272-k-no",
+                url="https://maps.app.goo.gl/QB2yHxZahKtTi3Sk7",
             ),
         ]
         event = Event(
@@ -151,7 +155,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41280.738025225925!2d139.63619093655805!3d35.438584145120856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cfc879b30db%3A0x8d76dbf7eaf7b911!2sYokohama%20Sanbo%20Hall%20Marineria!5e0!3m2!1sen!2sfr!4v1782062083547!5m2!1sen!2sfr",
+                coordinates=(35.4471499, 139.6432575),
+                address="2 Yamashitacho, Naka Ward, Yokohama, Kanagawa 231-0023, Japan",
                 description="横浜産貿ホール　マリネリア全面",
                 sources=[
                     Source(
@@ -159,6 +164,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn3j0r7jhTBvDEmCgBnlhwXrSYHHrkl3fqXnrZDIY8cCVr146rAAv7f4-86On8aWyTCrywzJEL_vYeMyux_gNF4fW3166cMPmdL8k1ZZiWV5_1TOMRlOt6LiAbYpurFO0j4Gw06wg=w408-h272-k-no",
+                url="https://maps.app.goo.gl/QB2yHxZahKtTi3Sk7",
             ),
         ]
         event = Event(
@@ -232,7 +240,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41280.738025225925!2d139.63619093655805!3d35.438584145120856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cfc879b30db%3A0x8d76dbf7eaf7b911!2sYokohama%20Sanbo%20Hall%20Marineria!5e0!3m2!1sen!2sfr!4v1782062083547!5m2!1sen!2sfr",
+                coordinates=(35.4471499, 139.6432575),
+                address="2 Yamashitacho, Naka Ward, Yokohama, Kanagawa 231-0023, Japan",
                 description="横浜産貿ホール　マリネリア全面",
                 sources=[
                     Source(
@@ -240,6 +249,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn3j0r7jhTBvDEmCgBnlhwXrSYHHrkl3fqXnrZDIY8cCVr146rAAv7f4-86On8aWyTCrywzJEL_vYeMyux_gNF4fW3166cMPmdL8k1ZZiWV5_1TOMRlOt6LiAbYpurFO0j4Gw06wg=w408-h272-k-no",
+                url="https://maps.app.goo.gl/QB2yHxZahKtTi3Sk7",
             ),
         ]
         event = Event(
@@ -294,7 +306,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41280.738025225925!2d139.63619093655805!3d35.438584145120856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cfc879b30db%3A0x8d76dbf7eaf7b911!2sYokohama%20Sanbo%20Hall%20Marineria!5e0!3m2!1sen!2sfr!4v1782062083547!5m2!1sen!2sfr",
+                coordinates=(35.4471499, 139.6432575),
+                address="2 Yamashitacho, Naka Ward, Yokohama, Kanagawa 231-0023, Japan",
                 description="横浜産貿ホール　マリネリア全面",
                 sources=[
                     Source(
@@ -302,6 +315,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn3j0r7jhTBvDEmCgBnlhwXrSYHHrkl3fqXnrZDIY8cCVr146rAAv7f4-86On8aWyTCrywzJEL_vYeMyux_gNF4fW3166cMPmdL8k1ZZiWV5_1TOMRlOt6LiAbYpurFO0j4Gw06wg=w408-h272-k-no",
+                url="https://maps.app.goo.gl/QB2yHxZahKtTi3Sk7",
             ),
         ]
         event = Event(
@@ -358,7 +374,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5043415693403!2d139.78040617588312!3d35.689204772584645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889520a5d69ef%3A0xe6ef2b5af497cb6!2sMensh%C5%8D%20Kaikan!5e0!3m2!1sen!2sfr!4v1782073194672!5m2!1sen!2sfr",
+                coordinates=(35.6743726, 139.7854392),
+                address="Japan, 〒103-0006 Tokyo, Chuo City, Nihonbashitomizawacho, 8−10 2F",
                 description="東京・綿商会館",
                 sources=[
                     Source(
@@ -366,6 +383,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkFP5smofCcI1pcSOpB7kGuHjHK3moHPhHjeJAQgboAlqvFcSEflHTr3vcPHBriPh_pp_TZqx65HaL8wwG6Wk0B-mo-hNl4et-00fo6mW3vnkQukXpcTk0HIyvVgt-IIMlrBzNK=s0?imgmax=0",
+                url="https://maps.app.goo.gl/bcm4BAZrm5QtDJpa8",
             ),
         ]
         event = Event(
@@ -422,7 +442,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41280.738025225925!2d139.63619093655805!3d35.438584145120856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cfc879b30db%3A0x8d76dbf7eaf7b911!2sYokohama%20Sanbo%20Hall%20Marineria!5e0!3m2!1sen!2sfr!4v1782062083547!5m2!1sen!2sfr",
+                coordinates=(35.4471499, 139.6432575),
+                address="2 Yamashitacho, Naka Ward, Yokohama, Kanagawa 231-0023, Japan",
                 description="横浜産貿ホール　マリネリア全面",
                 sources=[
                     Source(
@@ -430,6 +451,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn3j0r7jhTBvDEmCgBnlhwXrSYHHrkl3fqXnrZDIY8cCVr146rAAv7f4-86On8aWyTCrywzJEL_vYeMyux_gNF4fW3166cMPmdL8k1ZZiWV5_1TOMRlOt6LiAbYpurFO0j4Gw06wg=w408-h272-k-no",
+                url="https://maps.app.goo.gl/QB2yHxZahKtTi3Sk7",
             ),
         ]
         event = Event(

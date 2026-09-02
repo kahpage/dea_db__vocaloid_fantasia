@@ -67,10 +67,10 @@ def retrieve_circles(event_name: str) -> list[Circle]:
 
 if __name__ == "__main__":
     events: list[Event] = []
-    active_events: list[int | str] = list(range(1, 14 + 1))
+    disabled_events: list[int | str] = []
 
     i = 1  # ==== vocaloid_fantasia1 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vocaloid_fantasia{i}"
         print(f"Processing {event_name} ...")
 
@@ -128,7 +128,7 @@ if __name__ == "__main__":
         events.append(event)
 
     i = 2  # ==== vocaloid_fantasia2  ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vocaloid_fantasia{i}"
         print(f"Processing {event_name} ...")
 
@@ -195,7 +195,7 @@ if __name__ == "__main__":
         events.append(event)
 
     i = 3  # ==== vocaloid_fantasia3  ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vocaloid_fantasia{i}"
         print(f"Processing {event_name} ...")
 
@@ -280,7 +280,7 @@ if __name__ == "__main__":
         events.append(event)
 
     i = 4  # ==== vocaloid_fantasia4  ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vocaloid_fantasia{i}"
         print(f"Processing {event_name} ...")
 
@@ -346,7 +346,7 @@ if __name__ == "__main__":
         events.append(event)
 
     i = 5  # ==== vocaloid_fantasia5  ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vocaloid_fantasia{i}"
         print(f"Processing {event_name} ...")
 
@@ -414,7 +414,7 @@ if __name__ == "__main__":
         events.append(event)
 
     i = 6  # ==== vocaloid_fantasia6  ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vocaloid_fantasia{i}"
         print(f"Processing {event_name} ...")
 
